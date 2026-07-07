@@ -7,9 +7,9 @@ jobs:
             - name: checkout_repo
               uses: actions/checkout@v7
 
-            - name: list and read files
-              run: |
-              echo "my first message"
-              ls
-              cat README.md
+            - name: list all files
+              run: ls -ltra
+
+            - name: executing shell script
+              run: ./ascii-script.sh
 
