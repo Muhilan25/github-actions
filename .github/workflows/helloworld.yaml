@@ -1,0 +1,14 @@
+name: Hello world
+on: workflow_dispatch   #mannual we have press button for starting is called workflow dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print greeting
+        run: echo "Hello!!"
+
+      - name: print multiple lines
+        run: |
+          echo "thuis runs several commands"
+          echo "today runner is $RUNNER_OS"
+          echo "repo is $GITHUB_REPOSITORY"
