@@ -1,11 +1,13 @@
-name: env scopes
+name: 12 env scopes
 on: workflow_dispatch
 env:
-  name: mithran
+  name: muhilan
 
 jobs:
     job1:
         runs-on: ubuntu-latest
+        env:
+            name: munna
         steps:
             - name: user workflow
               run: echo "my name is = $name"
