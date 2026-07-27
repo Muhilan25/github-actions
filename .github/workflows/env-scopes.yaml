@@ -1,0 +1,11 @@
+name: env scopes
+on: workflow_dispatch
+env:
+  name: mithran
+
+jobs:
+    job1:
+        runs-on: ubuntu-latest
+        steps:
+            - name: user workflow
+              run: echo "my name is = $name"
